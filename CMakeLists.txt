@@ -1,0 +1,11 @@
+
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+
+ADD_LIBRARY(sqlite3 STATIC EXCLUDE_FROM_ALL
+	sqlite3.c
+	sqlite3.h
+	sqlite3ext.h
+)
+
+ADD_EXECUTABLE(sqlite EXCLUDE_FROM_ALL shell.c)
+TARGET_LINK_LIBRARIES(sqlite sqlite3)
