@@ -1,0 +1,11 @@
+
+public_headers
+{
+	sqlite3.h
+	sqlite3ext.h
+}
+
+sources
+{
+	sqlite3.c
+}
