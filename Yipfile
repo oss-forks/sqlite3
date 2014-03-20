@@ -18,3 +18,8 @@ sources
 {
 	sqlite3.c
 }
+
+app_sources
+{
+	shell.c
+}
